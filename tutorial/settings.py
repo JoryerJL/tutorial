@@ -39,6 +39,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
+LOCAL_APP = [
+    'quickstart.apps.QuickstartConfig'
+]
+THIRD_PARTY_APPS = [
+]
+
+INSTALLED_APPS += LOCAL_APP + THIRD_PARTY_APPS
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
